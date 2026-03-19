@@ -47,7 +47,7 @@ public class MirageIsland : IPlugin
     public void NotifySaveLoaded()
     {
         if (ctrl != null)
-            ctrl.Visible = SaveFileEditor.SAV is IGen3Hoenn;
+            ctrl.Visible = SaveFileEditor.SAV is SAV3RS or SAV3E;
     }
 
     public void NotifyDisplayLanguageChanged(string language)
